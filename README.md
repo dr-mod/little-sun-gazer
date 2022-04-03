@@ -2,6 +2,8 @@
 
 A miniature device depicting the relative position of the Sun and moon.
 
+![pic](docs/pic.jpg)
+
 ### Hardware
 * Raspberry Pi Pico
 * Precision RTC Module (DS3231)
