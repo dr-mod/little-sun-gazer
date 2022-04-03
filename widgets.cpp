@@ -12,7 +12,6 @@ void moon_earth(SolarThings &solar, time_t utc_time, Drawer &draw, int time_zone
     solar.celestial_bodies((long) utc_time, coordinates);
 
     double feta = atan2(coordinates[0], coordinates[1]);
-//    BIG_Y = BIG_Y - 40 * ((cos(feta) + 1) / 2.0);
 
     short sun_center_x = 280 / 2;
     short sun_center_y = BIG_Y;

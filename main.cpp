@@ -99,7 +99,6 @@ int main() {
         gpio_put(LED_PIN, 0);
         int till_next_minute = 60 - (rawtime % 60);
         deep_sleep(till_next_minute);
-//        sleep_ms(till_next_minute*1000);
         gpio_put(LED_PIN, 1);
     }
     return 0;

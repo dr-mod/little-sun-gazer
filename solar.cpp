@@ -158,10 +158,6 @@ public:
         double solar_declin = sun_declination(mtime);
         double eqTime = equation_of_time(mtime);
 
-        long noonTime =
-                round(solar_noon_time(longitude, eqTime) * 60)
-                + (time / SEC_IN_DAY) * SEC_IN_DAY;
-
         double trueSolarTime = ((julian_day + 0.5) - floor(julian_day + 0.5)) * 1440;
         trueSolarTime += (eqTime - 4.0 * longitude);
         trueSolarTime -= 1440 * floor(trueSolarTime / 1440);
@@ -228,7 +224,7 @@ public:
         double M = normalize(356.047 + 0.9856002585 * d);
 
         double E = M + (180 / M_PI) * e * sin(M / RADEG) * (1 + e * cos(M / RADEG));
-        E = E / RADEG;
+
         double xv = cos(E) - e;
         double yv = sin(E) * sqrt(1 - e * e);
 
