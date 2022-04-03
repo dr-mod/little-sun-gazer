@@ -1,4 +1,4 @@
-# Pico Sun Tracker
+# Little Sun Gazer
 
 A miniature device depicting the relative position of the Sun and moon.
 
