@@ -29,8 +29,8 @@
 #
 ******************************************************************************/
 #include "EPD_3in7.h"
-//#include "Debug.h"
-//#include "DEV_Config.c"
+#include "../Pico_ePaper_Code/c/lib/Config/Debug.h"
+#include "../Pico_ePaper_Code/c/lib/Config/DEV_Config.c"
 
 static const UBYTE lut_4Gray_GC[] =
 {

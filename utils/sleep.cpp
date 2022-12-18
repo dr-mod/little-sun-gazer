@@ -1,5 +1,5 @@
 #include "hardware/clocks.h"
-#include "hardware/rosc.h"
+#include "../../pico-extras/src/rp2_common/hardware_rosc/include/hardware/rosc.h"
 #include "hardware/structs/scb.h"
 #include "time_utils.cpp"
 
