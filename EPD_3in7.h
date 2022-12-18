@@ -31,7 +31,7 @@
 #ifndef __EPD_3IN7_H_
 #define __EPD_3IN7_H_
 
-#include "DEV_Config.h"
+//#include "DEV_Config.h"
 
 // Display resolution
 #define EPD_3IN7_WIDTH       280
