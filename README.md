@@ -1,5 +1,7 @@
 # Little Sun Gazer
 
+Fork of https://github.com/dr-mod/little-sun-gazer/
+
 A miniature device depicting the relative position of the Sun and moon.
 
 ![pic](docs/pic.jpg)

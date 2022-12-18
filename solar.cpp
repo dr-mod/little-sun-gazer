@@ -225,8 +225,8 @@ public:
 
         double E = M + (180 / M_PI) * e * sin(M / RADEG) * (1 + e * cos(M / RADEG));
 
-        double xv = cos(E) - e;
-        double yv = sin(E) * sqrt(1 - e * e);
+        double xv = cos(E / RADEG) - e;
+        double yv = sin(E / RADEG) * sqrt(1 - e * e);
 
         double r = sqrt(xv * xv + yv * yv);
 
