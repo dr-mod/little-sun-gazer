@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include "pico/stdlib.h"
 #include "hardware/rtc.h"
-#include "Fonts/font12.c"
+#include "../Pico_ePaper_Code/c/lib/Fonts/font12.c"
 #include "pico/sleep.h"
 #include "utils/sleep.cpp"
 #include "solar.cpp"

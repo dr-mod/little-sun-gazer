@@ -1,6 +1,26 @@
 # Little Sun Gazer
 
+## This fork
+
 Fork of https://github.com/dr-mod/little-sun-gazer/
+
+Includes :
+
+* Patch from https://github.com/dr-mod/little-sun-gazer/pull/3, thanks @tvoverbeek
+* Modifications suggested by https://github.com/dr-mod/little-sun-gazer/issues/1#issuecomment-1155629352, thanks @marcus-e-e
+
+## Build
+### Pre-requirements
+This is for the Mac:
+Blah blah
+###
+```
+git clone https://github.com/alexdyas/little-sun-gazer.git
+git clone https://github.com/waveshare/Pico_ePaper_Code.git
+git clone https://github.com/raspberrypi/pico-sdk.git
+cd little-sun-gazer
+./run_build.sh
+```
 
 A miniature device depicting the relative position of the Sun and moon.
 
