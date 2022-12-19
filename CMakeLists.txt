@@ -19,8 +19,6 @@ add_subdirectory(../Pico_ePaper_Code/c/lib/Fonts Fonts)
 add_subdirectory(../Pico_ePaper_Code/c/lib/Config Config)
 add_subdirectory(../Pico_ePaper_Code/c/lib/GUI GUI)
 
-
-
 include_directories(./utils)
 include_directories(./ds3231)
 include_directories(./Config)
