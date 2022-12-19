@@ -17,7 +17,7 @@ target_link_libraries(little-sun-gazer
     pico_stdlib
     Fonts
     hardware_rtc
-    hardware_sleep
+#    hardware_sleep
     hardware_i2c
     hardware_adc
     hardware_spi

@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <cstdlib>
 #include "pico/stdlib.h"
-#include "hardware/rtc.h"
+#include "../pico-sdk/src/rp2_common/hardware_rtc/include/hardware/rtc.h"
 #include "../Pico_ePaper_Code/c/lib/Fonts/font12.c"
 #include "../pico-extras/src/rp2_common/pico_sleep/include/pico/sleep.h"
 #include "sleep.cpp"
@@ -48,6 +48,9 @@ int8_t convert(uint8_t input) {
 }
 
 int main() {
+/*
+    Commenting out this whole block as it seems only necessary for debug,
+    and it produces compile issues around the sleep routines. - A Dyas
     ////// Test
     const uint LED_PIN = 25;
 
@@ -58,7 +61,7 @@ int main() {
 
     // For remote debug
     sleep_ms(5000);
-
+*/
     stdio_init_all();
     i2c_init(I2C_PORT, 100 * 1000);
     gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
@@ -92,7 +95,7 @@ int main() {
 
         char time_str[5];
         sprintf(time_str, "%02d:%02d", (t.hour + 2) % 24, t.min);
-        Paint_DrawString_EN(20, 230, time_str, &Font48, WHITE, GRAY4);
+        Paint_DrawString_EN(20, 230, time_str, &Font24, WHITE, GRAY4);
         drawer.commit();
 
 

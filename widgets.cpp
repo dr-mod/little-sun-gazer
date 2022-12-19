@@ -1,6 +1,6 @@
-//#include "Fonts/font24.c"
+#include "../Pico_ePaper_Code/c/lib/Fonts/font24.c"
 //#include "Fonts/font48.c"
-//#include "Fonts/font8.c"
+#include "../Pico_ePaper_Code/c/lib/Fonts/font8.c"
 
 
 void moon_earth(SolarThings &solar, time_t utc_time, Drawer &draw, int time_zone) {
