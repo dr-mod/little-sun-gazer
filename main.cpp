@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <cstdlib>
 #include "pico/stdlib.h"
-#include "../pico-sdk/src/rp2_common/hardware_rtc/include/hardware/rtc.h"
+#include "hardware/rtc.h"
 #include "../Pico_ePaper_Code/c/lib/Fonts/font12.c"
-#include "../pico-extras/src/rp2_common/pico_sleep/include/pico/sleep.h"
+//#include "sleep.h"
 #include "sleep.cpp"
 #include "solar.cpp"
 #include "draw.cpp"
@@ -99,14 +99,10 @@ int main() {
         drawer.commit();
 
 
-        gpio_put(LED_PIN, 0);
+//        gpio_put(LED_PIN, 0);
         int till_next_minute = 60 - (rawtime % 60);
         deep_sleep(till_next_minute);
-        gpio_put(LED_PIN, 1);
+//        gpio_put(LED_PIN, 1);
     }
     return 0;
 }
-
-
-
-

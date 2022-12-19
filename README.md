@@ -18,8 +18,9 @@ Blah blah
 ###
 ```
 git clone https://github.com/alexdyas/little-sun-gazer.git
-git clone https://github.com/waveshare/Pico_ePaper_Code.git
-git clone https://github.com/raspberrypi/pico-sdk.git
+git clone https://github.com/waveshare/Pico_ePaper_Code.git --recurse-submodules
+git clone https://github.com/raspberrypi/pico-sdk.git --recurse-submodules
+git clone https://github.com/raspberrypi/pico-extras.git --recurse-submodules
 cd little-sun-gazer
 ./run_build.sh
 ```

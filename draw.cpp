@@ -1,6 +1,6 @@
 #include "EPD_3in7.h"
 #include "EPD_3in7.c"
-#include "GUI_Paint.c"
+#include "../Pico_ePaper_Code/c/lib/GUI/GUI_Paint.c"
 
 class Drawer {
 private:
