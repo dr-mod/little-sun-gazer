@@ -5,6 +5,7 @@
 # ToDo - Add some error trapping
 #       - Remove the rm -rf build when we're more confident of the build process
 
+# Name of directory to store build artifacts
 BUILD_DIR="build"
 
 # Set this so pico_sdk_import.cmake can see the Pico SDK library path

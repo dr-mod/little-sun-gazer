@@ -12,10 +12,11 @@ Includes :
 * Modification to change Font48 to Font24 as it isn't clear where to find Font48
 
 ## Build
+This build procedure assumes a MacOS or Linux type environment.
 ### Pre-requirements
-This is for the Mac:
-Blah blah
-###
+You will need a working Pico development environment for your work station, including cmake, make etc. This is documented in many places, eg:
+https://github.com/raspberrypi/pico-sdk
+### Instructions
 ```
 git clone https://github.com/alexdyas/little-sun-gazer.git
 git clone https://github.com/waveshare/Pico_ePaper_Code.git --recurse-submodules
@@ -24,6 +25,9 @@ git clone https://github.com/raspberrypi/pico-extras.git --recurse-submodules
 cd little-sun-gazer
 ./run_build.sh
 ```
+## Install
+ToDo...
+
 
 A miniature device depicting the relative position of the Sun and moon.
 
@@ -44,5 +48,5 @@ If you would like to support what I do and keep me caffeinated, you can do it he
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/drmod)
 
-### Disclaimer 
+### Disclaimer
 This is not a finished project, but at the moment I don't have access to required hardware to finish it.
