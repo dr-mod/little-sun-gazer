@@ -1,6 +1,6 @@
 #include "../Pico_ePaper_Code/c/lib/Fonts/font24.c"
 // ToDo - Find and include this Font
-//#include "Fonts/font48.c"
+#include "font48.c"
 #include "../Pico_ePaper_Code/c/lib/Fonts/font8.c"
 
 

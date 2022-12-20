@@ -12,6 +12,7 @@
 #include "widgets.cpp"
 
 
+
 //TODO: Remove all date related code
 extern uint8_t buf[];
 extern char *week[];
@@ -95,7 +96,7 @@ int main() {
 
         char time_str[5];
         sprintf(time_str, "%02d:%02d", (t.hour + 2) % 24, t.min);
-        Paint_DrawString_EN(20, 230, time_str, &Font24, WHITE, GRAY4);
+        Paint_DrawString_EN(80, 250, time_str, &Font48, WHITE, GRAY4);
         drawer.commit();
 
 

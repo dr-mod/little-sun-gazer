@@ -14,11 +14,11 @@ export PICO_SDK_PATH="../../pico-sdk"
 export PICO_EXTRAS_PATH="../../pico-extras"
 
 # Remove build dir <- Probably don't really need this, but cleaner for now
-if [ -d "${BUILD_DIR}" ]
-then
-  echo "---------- Removing existing build directory ------------"
-  rm -rf "${BUILD_DIR}"
-fi
+#if [ -d "${BUILD_DIR}" ]
+#then
+#  echo "---------- Removing existing build directory ------------"
+#  rm -rf "${BUILD_DIR}"
+#fi
 
 # Construct the make files
 echo "---------- cmake ------------"
@@ -27,3 +27,10 @@ cmake -B "${BUILD_DIR}" -S .
 # Compile
 echo "---------- make ------------"
 make -C "${BUILD_DIR}"/
+
+# Copy
+echo "---------- copy on success ------------"
+if [ -d "/Volumes/RPI-RP2" ] && [ -f "${BUILD_DIR}/little-sun-gazer.uf2" ]
+then
+  cp "${BUILD_DIR}/little-sun-gazer.uf2" /Volumes/RPI-RP2/little-sun-gazer.uf2
+fi
